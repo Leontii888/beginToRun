@@ -103,15 +103,7 @@ nav a:hover{
 li.feet__item {
 	display: inline-block;
 	padding: 0 30px;
-
-
-
 }
-
-
-
-
-
 .cta:hover{
 	background-color: #fff;
 	/*border: 1px solid #EA5455;*/
@@ -146,21 +138,15 @@ a .aimer:hover {
 	background-size: cover;
 	padding-top: 67px;
 	padding-bottom: 300px;
-	/*height: 950px;*/
 }
-
-
 .offer {
 	margin-top: 160px;
 	color: #111;
-	/*text-align: center;*/
 }
-
 .main-title {
 	font-size: 40px;
 	text-align: left;
 }
-
 .intro {
 	text-transform: uppercase;
 	font-size: 20px;
@@ -173,9 +159,7 @@ a .aimer:hover {
 	color: #c33;
 	font-size: 40px;
 }
-
 .cta {
-	/*display: block;*/
 	color: #fff;
 	background: #EA5455;
 	text-transform: uppercase;
@@ -184,10 +168,8 @@ a .aimer:hover {
 	padding: 18px 34px;
 	text-decoration: none;
 	font-weight: 700;
-	/*box-shadow: 0 3px 4px #b6b6b6*/
 }
 
-}
 .form .cta {
 	box-shadow: 0 1px 2px #b6b6b6;
 
@@ -199,7 +181,7 @@ a .aimer:hover {
 }
 .advantages h3 {
 	padding-top: 20px;
-/*	margin: 20px auto;*/
+	/*	margin: 20px auto;*/
 }
 .advantages p {
 	padding-top: 5px;
@@ -304,10 +286,10 @@ span.hilite{
 	background-color: yellow;
 }
 .wow{
-display: inline;
-    color: red;	
+	display: inline;
+	color: red;	
 }
 
-  /*-webkit-animation-duration: 5s;*/
-  /*-webkit-animation-delay: 10s;*/
-  /*-webkit-animation-iteration-count: 6s;*/
+/*-webkit-animation-duration: 5s;*/
+/*-webkit-animation-delay: 10s;*/
+/*-webkit-animation-iteration-count: 6s;*/
