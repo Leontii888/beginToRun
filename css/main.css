@@ -80,7 +80,7 @@ a{
 	font-weight: regular;
 	text-decoration: none;
 }
-/* nav a:hover{
+nav a:hover{
 	color:#484848;
 	color:#118EE6;
 	cursor: pointer;
@@ -91,10 +91,10 @@ a{
 	padding: 12px 15px;
 	background-color: #dfe6dc;
 	justify-content: space-between;
-} */
+} 
 
 .feet{
-	/*display: none;*/
+	display: none;
 	position: absolute;
 	top: 10px;
 	left: 350px;

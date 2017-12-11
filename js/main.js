@@ -53,11 +53,11 @@ $(document).ready(function(){
 	// 	direction: "vertical"
 	// });
 
-	$('li.menu__item').on('click', function(){
-	$('li.feet__item').addClass('animated shake').one('animationend', function(){
-			$(this).removeClass('animated shake');
-			});
-	});
+	// $('li.menu__item').on('click', function(){
+	// $('li.feet__item').addClass('animated shake').one('animationend', function(){
+	// 		$(this).removeClass('animated shake');
+	// 		});
+	// });
 
 	// $('li.menu__item').on('mouseleave', function(){
 	// $('.feet').toggleClass('animated fadeOut');
