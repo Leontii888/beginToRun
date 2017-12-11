@@ -2,12 +2,12 @@ $(document).ready(function(){
 	var animationName = 'animated shake'
 	var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
 
-	// $('.advantages__item').on('click', function(){
-	// 	$('.story__item img').addClass(animationName).one(animationend, 
-	// 		function(){
-	// 			$(this).removeClass(animationName);
-	// 		});
-	// });
+	$('.advantages__item').on('click', function(){
+		$('.story__item img').addClass(animationName).one(animationend, 
+			function(){
+				$(this).removeClass(animationName);
+			});
+	});
 	$('.form .cta').on('click', function(){
 		$('.form__input').addClass(animationName).one(animationend, 
 			function(){
