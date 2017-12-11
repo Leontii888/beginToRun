@@ -16,5 +16,5 @@ $email='Заказ <vpluce.ru>'; // от кого
  $send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = utf-8\r\nFrom:$email");
  
 ini_set('short_open_tag', 'On');
-header('Refresh: 3; URL=index.html');
+header('Refresh: 30; URL=index.html');
 ?>
