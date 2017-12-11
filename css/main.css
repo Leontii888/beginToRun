@@ -82,9 +82,9 @@ a{
 }
 nav a:hover{
 	color:#484848;
-	color:#118EE6;
+	/*color:#118EE6;*/
 	cursor: pointer;
-	background: url('../img/foot.png'); 
+	/*background: url('../img/foot.png'); */
 	width: 45px;
 	height: 59px;
 	border-radius: 3px;
