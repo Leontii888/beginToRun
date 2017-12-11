@@ -16,7 +16,7 @@ $(document).ready(function(){
 	});
 
 	$('.cta').on('click', function(){
-		$('.intro,.frontpage').addClass('animated shake j-intro--color').one(animationend, 
+		$('.intro,.frontpage').addClass('animated pulse j-intro--color').one(animationend, 
 			function(){
 				$(this).removeClass('animated pulse j-intro--color');
 			});
@@ -32,12 +32,12 @@ $(document).ready(function(){
 	});
 
 	$('.j-price').on('click', function(){
-		$('.j-advantages__item_hidden').css("display","block").addClass('animated jackInTheBox j-intro--color')
-		.one(animationend, 
+		$('.j-advantages__item_hidden').css("display","block").addClass('animated jackInTheBox').addClass('j-intro--color')
+	.one(animationend, 
 			function(){
-				$(this).removeClass('animated jackInTheBox j-intro--color').css("display","none");
+				$(this).removeClass('animated jackInTheBox').css("display","none");
 			});
-		;
+		
 	});
 
 	// $('.j-price').on('click', function(){
