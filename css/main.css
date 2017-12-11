@@ -160,6 +160,7 @@ a .aimer:hover {
 	font-size: 40px;
 }
 .cta {
+	/*display: block;*/
 	color: #fff;
 	background: #EA5455;
 	text-transform: uppercase;
@@ -204,7 +205,6 @@ a .aimer:hover {
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 30px;
-	/*padding-top: 10px;*/
 	margin: 0;
 
 }
