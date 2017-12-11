@@ -155,7 +155,7 @@ a .aimer:hover {
 	margin-bottom: 56px;
 	-webkit-animation-iteration-count: 3;
 }
-.intro--color{
+.j-intro--color{
 	color: #c33;
 	font-size: 40px;
 }
@@ -269,15 +269,15 @@ a .aimer:hover {
 	text-align: center;
 	padding: 50px 0;
 }
-.advantages__item_hidden{
+.j-advantages__item_hidden{
 	background-color: #DFEFFF;
 	box-shadow: 0 0 8px #777; 
 	position: absolute;
-	width: 90px;
+	width: 50%;
 	border-radius: 4px;
 	top: 190px;
 	left:90px;
-	z-index: -100;
+	z-index: 100;
 	display: none;
 	transition: 5s;
 
@@ -285,9 +285,9 @@ a .aimer:hover {
 span.hilite{
 	background-color: yellow;
 }
-.wow{
+/*.wow{
 	display: inline;
-	color: red;	
+	color: red;	*/
 }
 
 /*-webkit-animation-duration: 5s;*/

@@ -2,12 +2,12 @@ $(document).ready(function(){
 	var animationName = 'animated shake'
 	var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
 
-	$('.advantages__item').on('click', function(){
-		$('.story__item img').addClass(animationName).one(animationend, 
-			function(){
-				$(this).removeClass(animationName);
-			});
-	});
+	// $('.advantages__item').on('click', function(){
+	// 	$('.story__item img').addClass(animationName).one(animationend, 
+	// 		function(){
+	// 			$(this).removeClass(animationName);
+	// 		});
+	// });
 	$('.form .cta').on('click', function(){
 		$('.form__input').addClass(animationName).one(animationend, 
 			function(){
@@ -16,9 +16,9 @@ $(document).ready(function(){
 	});
 
 	$('.cta').on('click', function(){
-		$('.intro,.frontpage').addClass('animated shake intro--color').one(animationend, 
+		$('.intro,.frontpage').addClass('animated shake j-intro--color').one(animationend, 
 			function(){
-				$(this).removeClass('animated pulse intro--color');
+				$(this).removeClass('animated pulse j-intro--color');
 			});
 	});
 	$('.order').on('click', function(){
@@ -31,13 +31,18 @@ $(document).ready(function(){
 		$('.story__item__txt').removeClass('animated bounceOutRight');
 	});
 
-	$('.advantages__item').on('click', function(){
-		$('.advantages__item_hidden').css("display","block");
+	$('.j-price').on('click', function(){
+		$('.j-advantages__item_hidden').css("display","block").addClass('animated jackInTheBox j-intro--color')
+		.one(animationend, 
+			function(){
+				$(this).removeClass('animated jackInTheBox j-intro--color').css("display","none");
+			});
+		;
 	});
 
-	$('.advantages__item_hidden').on('click', function(){
-		$('.advantages__item_hidden').addClass('animated jackInTheBox intro--color');
-	});
+	// $('.j-price').on('click', function(){
+	// 	$('.j-advantages__item_hidden').addClass('animated jackInTheBox j-intro--color');
+	// });
 
 	// $('.main').onepage_scroll({
 	// 	sectionContainer: "section",
