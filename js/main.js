@@ -22,8 +22,8 @@ $(document).ready(function(){
 			});
 	});
 	$('.order').on('click', function(){
-		$('.j-rotate').addClass('animated jackInTheBox').one(animationend, function(){
-			$(this).removeClass('animated jackInTheBox');
+		$('.j-rotate').addClass('animated tada').one(animationend, function(){
+			$(this).removeClass('animated tada');
 		});
 	});
 
