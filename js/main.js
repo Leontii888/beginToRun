@@ -8,14 +8,15 @@ $(document).ready(function(){
 				$(this).removeClass(animationName);
 			});
 	});
-	$('.form .cta').on('click', function(){
+
+		$('.form .cta').on('click', function(){
 		$('.form__input').addClass(animationName).one(animationend, 
 			function(){
 				$(this).removeClass(animationName);
 			});
 	});
 
-	$('.cta').on('click', function(){
+	$('.intro').on('click', function(){
 		$('.intro,.frontpage').addClass('animated pulse j-intro--color').one(animationend, 
 			function(){
 				$(this).removeClass('animated pulse j-intro--color');
@@ -38,6 +39,25 @@ $(document).ready(function(){
 				$(this).removeClass('animated jackInTheBox').css("display","none");
 			});
 		});
+	$('.j-logo').on('click', function(){
+		$('.j-logo').addClass('animated hinge').one(animationend, 
+			function(){
+				$(this).removeClass('animated hinge');
+			});
+	});
+	$('.j-passexp').on('click', function(){
+		$('.j-passexp').addClass('animated fadeOutDownBig').one(animationend, 
+			function(){
+				$(this).removeClass('animated fadeOutDownBig');
+			});
+	});
+	$('.j-injury').on('click', function(){
+		$('.j-injury').addClass('animated rollOut').one(animationend, 
+			function(){
+				$(this).removeClass('animated rollOut');
+			});
+	});
+
 
 $(document).ready(function() { // вся мaгия пoслe зaгрузки стрaницы
 	$("#ajaxform").submit(function(){ // пeрeхвaтывaeм всe при сoбытии oтпрaвки

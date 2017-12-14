@@ -57,11 +57,10 @@ h3 {
 	justify-content: space-between;
 	position: relative;
 }
-.treck {
+.logo {
 	width: 80px;
 	height: 38px;
-
-	margin: 26px ;
+	margin: 22px;
 
 
 }
@@ -73,6 +72,9 @@ h3 {
 nav{
 	padding: 0 15px;
 	
+}
+.j-logo, .j-passExp{
+	  -webkit-animation-duration: 9s;
 }
 a{
 	color: #fff;
@@ -155,6 +157,10 @@ a .aimer:hover {
 	margin-bottom: 56px;
 	-webkit-animation-iteration-count: 3;
 }
+.intro:hover{
+	cursor: pointer;
+
+}
 .j-intro--color{
 	color: #c33;
 	font-size: 40px;
@@ -197,6 +203,11 @@ a .aimer:hover {
 	-webkit-animation-duration: 15s;
 	/*-webkit-animation-delay: 10s;*/
 	/*-webkit-animation-iteration-count: 2;*/
+}
+.payme:hover{
+
+	cursor: pointer;
+
 }
 
 .why{
@@ -279,17 +290,26 @@ a .aimer:hover {
 	left:90px;
 	z-index: 100;
 	display: none;
-	transition: 5s;
+	transition: 7s;
 
 }
 span.hilite{
 	background-color: yellow;
 }
-/*.wow{
+/* .wow{
 	display: inline;
-	color: red;	*/
-}
+	color: red;	
+} */
 
 /*-webkit-animation-duration: 5s;*/
 /*-webkit-animation-delay: 10s;*/
 /*-webkit-animation-iteration-count: 6s;*/
+
+.back{
+	display: block;
+	text-align: right;
+	margin: 70px 400px -80px 0;
+
+text-decoration: underline ;
+
+}
