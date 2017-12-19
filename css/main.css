@@ -5,12 +5,13 @@ body {
 	margin: 0;
 	background: #fff;
 }
-i {
-	/*font-family: fontawesome !important;*/
-}
-.fa{
+/*i {
+	font-family: fontawesome !important;
+}*/
+/*.fa {
 	color: #d1d3d5;
-}
+	
+}*/
 *, *:before, *:after{
 	box-sizing: border-box;
 }
@@ -48,32 +49,31 @@ h3 {
 .header__top{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .logo {
 	width: 70px;
-	margin: 32% 0;
+	margin: 32% 0 0 -130%;
 }
 
 .menu{
-
-	/*display:flex;
-	flex-wrap: wrap;
-	justify-content: space-between;*/
-	/*padding: 6%;*/
-	/*text-align: none;*/
 	list-style: none;
+	/*width: 100%;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
 }
 
 .menu li{
-	display: inline-block;
-	max-height: 20px;
-	margin: 15px 10px;
+	/*display: inline-block;*/
+	/*max-height: 40px;*/
+	margin: 0 10px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	background: #152932;
+	border: 4px solid #152932;
 }
-/*.menu__item{
-	padding: 3.5%;
-}*/
-
 
 .j-logo{
 	-webkit-animation-duration: 9s;
@@ -81,23 +81,19 @@ h3 {
 a{
 	box-sizing: border-box;
 	color: #fff;
-/*	font-size: 13px;*/
-	font-weight: 200;
+	font-weight: 300;
 	text-decoration: none;
 
 }
-nav a:hover{
-	max-height: 20px;
-	box-sizing: border-box;
-	color:#484848;
+nav li:hover{
+	
+	color:#111;
 	cursor: pointer;
-	border-radius: 3px;
-	/*padding: 8% 10%;*/
 	background-color: #dfe6dc;
-
-	border: 5px solid #dfe6dc;
-	/*justify-content: space-between;*/
-	transition: 0.3s;
+	transition: 0.2s;
+}
+nav a:hover{
+	color:#111;
 } 
 
 .cta:hover{
@@ -211,8 +207,12 @@ nav a:hover{
 	margin: 3% 0;
 
 }
+.story__item{
+	width: 550px;
+}
 .story__item img{
 	float: left;
+	padding: 2% 5%;
 
 }
 .story__txt{
@@ -220,19 +220,29 @@ nav a:hover{
 
 
 }
-.story__txt, h5{
+.story__txt, h4{
 	text-align: left;
+	margin:9% 0 0 0 ;
 }
-.story__txt h5{
-	font-weight: 400;
+.story__txt h4{
+	/*font-weight: 400;*/
+	font-style: bold;
 }
 .story__abz{
 	/*width: 100%;*/
 	/*height: 142px;*/
 	line-height: 24px;
 	color: #333;
+	margin-bottom: 10%;
 
 }
+.story__abz a {
+
+	font-style: bold;
+	color: #ccc;
+
+}
+
 
 .order {
 	background: #28647E;
@@ -323,3 +333,30 @@ nav a:hover{
 .back a{
 	color: #adadad;
 }
+
+
+
+@media screen and (max-width: 1024px){
+.j-logo, .story__item, .frontpage{
+
+	text-align: center;
+}
+
+.frontpage h1{
+
+	text-align: center;
+}
+
+}
+@media screen and (max-width: 400px){
+.j-logo, .advantages__item{
+
+	text-align: center;
+}
+.menu a{
+	font-size: 12px;
+}
+
+
+}
+	
