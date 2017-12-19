@@ -57,12 +57,16 @@ h3 {
 
 .menu{
 
-	display:flex;
+	/*display:flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-between;*/
 	/*padding: 6%;*/
 	/*text-align: none;*/
 	list-style: none;
+}
+
+.menu li{
+	display: inline-block;
 }
 .menu__item{
 	padding: 3.5%;
