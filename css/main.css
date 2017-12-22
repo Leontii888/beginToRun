@@ -5,6 +5,7 @@ body {
 	margin: 0;
 	background: #fff;
 }
+
 	/*i {
 	font-family: fontawesome !important;
 	}*/
@@ -118,9 +119,8 @@ body {
 	}
 
 	.reasons{
-			background: linear-gradient(to  right bottom, #2752FC 0%, #B782FB 100%);
-
-		padding-top: 1%;
+		background: linear-gradient(to  right bottom, #2752FC 0%, #B782FB 100%);
+		padding-top: 3%;
 	}
 	.reasons h2,h3,p{
 		color: #ccc;
@@ -138,11 +138,9 @@ body {
 		background: url('../img/panic.png'); 
 	}
 	.frontpage{
-		
-	
 		background: url('../img/bg_scr111.jpg') no-repeat  top;
 		background-size: cover;
-		padding-top: 167px;
+		padding-top: 210px;
 		padding-bottom: 300px;
 		/*position: fixed;*/
 	}
@@ -188,7 +186,7 @@ body {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-top: 2%;
-		padding-bottom: 5%;
+		padding-bottom: 7%;
 	}
 	.advantages__item h3 {
 		margin-top: 15%;
@@ -217,7 +215,7 @@ body {
 	.why{
 		background-color: #fdfef2;
 		color: #333;
-		padding-bottom: 6%;
+		padding-bottom: 8%;
 
 	}
 	.story{
@@ -293,7 +291,7 @@ body {
 
 	.form .cta {
 		width: 240px;
-		font-size: 13px;
+		font-size: 12px;
 		border: none;
 		cursor: pointer;
 		margin: 1% auto 5%;
