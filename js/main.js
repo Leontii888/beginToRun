@@ -16,8 +16,27 @@ $(document).ready(function(){
 			});
 	});
 
-	$('.intro').on('click', function(){
-		$('.intro,.frontpage').addClass('animated pulse j-intro--color').one(animationend, 
+	$('.burger').on('click', function(){
+		$('.menu').css("display","block"),
+		$('.burger').css("display","none"),
+		$('.header__top').css('flex-direction','column'),
+		$('.header__top').css('background','#B782FB'),
+		$('.closeicon').css("display","block"),
+		$('.closeicon').css("align-self","start")
+
+
+	});
+$('.closeicon').on('click', function(){
+	$('.header__top').css('flex-direction','row'),
+	$('.header__top').css('background','#40454B'),
+		$('.menu').css("display","none"),
+		$('.burger').css("display","block"),
+		$('.closeicon').css("display","none")
+		});
+
+
+	$('.logo').on('click', function(){
+		$('.offer h1').addClass('animated pulse j-intro--color').one(animationend, 
 			function(){
 				$(this).removeClass('animated pulse j-intro--color');
 			});
@@ -33,7 +52,7 @@ $(document).ready(function(){
 	});
 
 	$('.j-price').on('click', function(){
-		$('.j-advantages__item_hidden').css("display","block").addClass('animated jackInTheBox').addClass('j-intro--color')
+		$('.j-advantages__item-hidden').css("display","block").addClass('animated jackInTheBox').addClass('j-intro--color')
 	.one(animationend, 
 			function(){
 				$(this).removeClass('animated jackInTheBox').css("display","none");
