@@ -1,0 +1,122 @@
+
+@media screen and (max-width: 980px){
+	.logo {
+		margin-top: 32%;
+	}
+	.header__top{
+		justify-content: center;
+		text-align: center;
+	}
+
+	.j-logo, .story__item, .frontpage{
+
+		text-align: center;
+	}
+	.advantages{
+		justify-content: center;
+	}
+	.story{
+		margin-bottom: 10%;
+
+	}
+	.story__item{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 2%;
+	}
+	.story__txt{
+		margin-bottom: 8%;
+	}
+	.story__item h4, p{
+
+		text-align: center;
+	}
+
+	.frontpage h1{
+		text-align: center;
+	}
+	#order .container{
+		padding: 15% 5%;
+	}
+	
+
+}
+@media screen and (max-width: 600px){
+	.menu{
+		display: none;
+
+	}
+	.burger {
+		display: block;
+		margin:  -1%;
+	}
+	.closeicon{
+		padding: 2%;
+	}
+	.logo{
+		padding: 0;
+		margin: 20%;
+	}
+	.bx-viewport{
+		padding: 0;
+		margin: 0;
+		height: 400px;
+		display: flex;
+		justify-content: center;
+	}
+	.bx-viewport img{
+		
+		height: 50%;
+		
+	
+
+
+
+	.header__top{
+		margin: 0;
+		padding: 3%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+
+
+	.offer {
+		margin-top: -10%;
+		color: #111;
+	}
+	.main-title {
+		font-size: 50px;
+	}
+	.intro {
+		text-transform: uppercase;
+		font-size: 24px;
+		font-weight: 400;
+		margin-top: 20px;
+		margin-bottom: 56px;
+		-webkit-animation-iteration-count: 3;
+	}	
+
+	.order h5{
+		margin: 5% auto 4%;
+	}
+
+	.j-advantages__item-hidden{
+		background-color: #ededed;
+		box-shadow: 5px 5px 8px #777; 
+		position: absolute;
+		width: 60%;
+		border-radius: 4px;
+		top: 100px;
+		left:10px;
+		z-index: 100;
+		display: none;
+		font-size: 30px;
+
+	}
+
+
+}
+

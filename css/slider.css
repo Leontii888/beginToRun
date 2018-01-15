@@ -1,0 +1,52 @@
+#slider{
+background: blue;
+padding-bottom: 250px;
+outline: 2px solid red;
+
+}
+.slider ul{
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+text-align: center;
+display: block;
+}
+
+
+
+.slider li{
+
+list-style:none;
+padding-bottom: 20px;
+
+
+}
+.boolin{
+
+text-align: center;
+position: relative;
+}
+.boolin span, span:before, span:after{
+	display: inline-block;
+	background: #ccc;
+	width: 25px;
+	height: 10px;
+	border-radius: 7px;
+}
+.boolin span:before{
+position: absolute;
+	background: #444;
+	width: 25px;
+	height: 10px;
+	border-radius: 7px;
+	left: -30px;
+}
+.boolin span:ater{
+
+	background: #ccc;
+	width: 25px;
+	height: 10px;
+	border-radius: 7px;
+	padding-right: 30px;
+}
