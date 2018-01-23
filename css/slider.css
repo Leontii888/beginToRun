@@ -1,52 +1,104 @@
 #slider{
-background: blue;
-padding-bottom: 250px;
-outline: 2px solid red;
+	background: blue;
 
+	padding-bottom: 120px;
 }
-.slider ul{
 
-	display: flex;
-	justify-content: center;
-	align-content: center;
+.slider{
+position: relative;
+max-width: 90%;
+height: 50vh;
+margin: auto;
 text-align: center;
-display: block;
+}
+.mySlides img{
+	width: 60%;
 }
 
+.myslides{
+position: absolute;
+top: 20px;
+right:0;
+	display: none;
+}
+.curry{
+	display: block;
+}
+.n{
+	color: #575757;
+}
+.numbertext{
+position: absolute;
+top: 96%;
+right: 75.5%;
+margin-top: -17px;
+color: #fff;
+/*font-weight: bold;*/
+font-size: 14px;
+opacity: .6;
 
+}
+.prev1, .next1{
+cursor: pointer;
+position: absolute;
+top: 50%;
+right: 85%;
+width: auto;
+margin-top: -22px;
+padding: 16px 20px;
+color: #fff;
+/*font-weight: bold;*/
+font-size: 24px;
+transition: .3s ease;
+border-radius: 4px;
+}
+.next1{
+	right:11%;
+	border-radius: 4px;
+}
+.prev1:hover, .next1:hover{
+	background: rgba(0,0,0,.6);
+}
 
-.slider li{
+.text{
+	color: #f2f2f2;
+	position: absolute;
+	font-size: 15px;
+	top: 85%;
+	left:  21%;
+	padding: 8px 12px;
 
-list-style:none;
-padding-bottom: 20px;
+}
 
-
+.boolin_wrap{
+margin-top: 30px;
+	
 }
 .boolin{
-
-text-align: center;
-position: relative;
-}
-.boolin span, span:before, span:after{
+	margin: 0 2px;
+	transition: background .3s ease;
 	display: inline-block;
 	background: #ccc;
 	width: 25px;
 	height: 10px;
 	border-radius: 7px;
+	cursor: pointer;
 }
-.boolin span:before{
-position: absolute;
-	background: #444;
-	width: 25px;
-	height: 10px;
-	border-radius: 7px;
-	left: -30px;
+.active, .boolin:hover{
+	background: #555;
 }
-.boolin span:ater{
-
-	background: #ccc;
-	width: 25px;
-	height: 10px;
-	border-radius: 7px;
-	padding-right: 30px;
+.fade{
+	animation-name: fade;
+	-webkit-animation-name:fade;
+	 -webkit-animation: fade;
+	 -o-animation: fade;
+	 animation-duration: 1.5s;
+	}
+@-webkit-keyframes fade{
+	from: {opacity:.4};
+	 to: {opacity: 1};
+}
+@keyframes fade{
+	from: {opacity:.4};
+	 to: {opacity: 1};
 }

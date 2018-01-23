@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	var animationName = 'animated shake'
 	var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
 
@@ -15,26 +16,13 @@ $(document).ready(function(){
 				$(this).removeClass(animationName);
 			});
 	});
-
-	$('.burger').on('click', function(){
-		$('.menu').css("display","block"),
-		$('.burger').css("display","none"),
-		$('.header__top').css('flex-direction','column'),
-		$('.header__top').css('background','#B782FB'),
-		$('.closeicon').css("display","block"),
-		$('.closeicon').css("align-self","start")
-
-
+//------бургер превращение
+	$('.burger_wrap').click(function(){
+		$(this).toggleClass('active');
+		
 	});
-$('.closeicon').on('click', function(){
-	$('.header__top').css('flex-direction','row'),
-	$('.header__top').css('background','#40454B'),
-		$('.menu').css("display","none"),
-		$('.burger').css("display","block"),
-		$('.closeicon').css("display","none")
-		});
 
-
+//-------------разная анимация на всех экрнанах
 	$('.logo').on('click', function(){
 		$('.offer h1').addClass('animated pulse j-intro--color').one(animationend, 
 			function(){
@@ -52,7 +40,7 @@ $('.closeicon').on('click', function(){
 	});
 
 	$('.j-price').on('click', function(){
-		$('.j-advantages__item-hidden').css("display","block").addClass('animated jackInTheBox').addClass('j-intro--color')
+		$('.j-advantages__item-hidden p').css("display","block").addClass('animated jackInTheBox').addClass('j-intro--color')
 	.one(animationend, 
 			function(){
 				$(this).removeClass('animated jackInTheBox').css("display","none");
@@ -82,12 +70,12 @@ $('.closeicon').on('click', function(){
 				$(this).removeClass('animated rollOut');
 			});
 	});
-
+//----------смена цвета фона
 $('.j-change_bg').hover(function(){
 $('.why').css('background', 'transparent');
 
-})
-var colorArray = ["#5A9C6E", "#A8BF5A", "#FAC46E", "#FAD5BB", "#F2FEFF"]; // создаем массив с цветами фона
+});
+var colorArray = ["linear-gradient(to bottom, #0088cc, #0044cc)", "#A8BF5A", "#FAC46E", "#FAD5BB", "#F2FEFF"]; // создаем массив с цветами фона
 var i = 0; 
 
  $('.j-change_bg').on('click', function changeColor(){
@@ -98,6 +86,37 @@ var i = 0;
     }
 
 });
- 
+//---------слайдер----------------------------
+ $('.next1').click(function(){
+ 	var currentImage = $('.mySlides.curry');
+ 	var currentImageIndex = $('.mySlides.curry').index();
+ 	var nextImageIndex = currentImageIndex + 1;
+ 	var nextImage = $('.mySlides').eq(nextImageIndex);
+ 	currentImage.fadeOut(1000);
+ 	currentImage.removeClass('curry');
+ 	if (nextImageIndex == ($('.mySlides:last').index() + 1)){
+ 		$('.mySlides').eq(0).fadeIn(1000);
+ 		$('.mySlides').eq(0).addClass('curry');
+ 	}
+ 	else{
+ 		nextImage.fadeIn(1000);
+ 		nextImage.addClass('curry');
+ 	}
+
+ });
+
+$('.prev1').click(function(){
+ 	var currentImage = $('.mySlides.curry');
+ 	var currentImageIndex = $('.mySlides.curry').index();
+ 	var prevImageIndex = currentImageIndex - 1;
+ 	var prevImage = $('.mySlides').eq(prevImageIndex);
+
+	currentImage.fadeOut(1000);
+ 	currentImage.removeClass('curry');
+	prevImage.fadeIn(1000);
+ 	prevImage.addClass('curry');
+
+});
+
 
 });
