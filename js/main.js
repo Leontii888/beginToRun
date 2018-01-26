@@ -75,7 +75,7 @@ $('.j-change_bg').hover(function(){
 $('.why').css('background', 'transparent');
 
 });
-var colorArray = ["linear-gradient(to bottom, #0088cc, #0044cc)", "#A8BF5A", "#FAC46E", "#FAD5BB", "#F2FEFF"]; // создаем массив с цветами фона
+var colorArray = ["linear-gradient(to right bottom, #29B1F5, #0044cc)", "linear-gradient(to right bottom, #00F260, #0575E6)", "#FAC46E", "#FAD5BB", "#F2FEFF"]; // создаем массив с цветами фона
 var i = 0; 
 
  $('.j-change_bg').on('click', function changeColor(){
