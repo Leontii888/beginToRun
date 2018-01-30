@@ -10,12 +10,12 @@ $(document).ready(function(){
 			});
 	});
 
-		$('.form .cta').on('click', function(){
+/*		$('.form .cta').on('click', function(){
 		$('.form__input').addClass(animationName).one(animationend, 
 			function(){
 				$(this).removeClass(animationName);
 			});
-	});
+	});*/
 //------бургер превращение
 	$('.burger_wrap').click(function(){
 		$(this).toggleClass('active');
@@ -29,7 +29,7 @@ $(document).ready(function(){
 				$(this).removeClass('animated pulse j-intro--color');
 			});
 	});
-	$('.order').on('click', function(){
+	$('.j-rotate').on('click', function(){
 		$('.j-rotate').addClass('animated tada').one(animationend, function(){
 			$(this).removeClass('animated tada');
 		});
@@ -119,4 +119,21 @@ $('.prev1').click(function(){
 });
 
 
+
+
+$("#form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form").trigger("reset");
+		});
+		return false;
+	});
+	
 });
+
+
