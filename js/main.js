@@ -75,7 +75,7 @@ $('.j-change_bg').hover(function(){
 $('.why').css('background', 'transparent');
 
 });
-var colorArray = ["linear-gradient(to right bottom, #29B1F5, #0044cc)", "linear-gradient(to right bottom, #00F260, #0575E6)", "#FAC46E", "#FAD5BB", "#F2FEFF"]; // создаем массив с цветами фона
+var colorArray = [ "linear-gradient(to right bottom, #29B1F5, #0044cc)", "linear-gradient(to right bottom, #00F260, #0575E6)", "#FAC46E", "#FAD5BB", "#F2FEFF"]; // создаем массив с цветами фона
 var i = 0; 
 
  $('.j-change_bg').on('click', function changeColor(){
@@ -136,4 +136,39 @@ $("#form").submit(function() {
 	
 });
 
+var g = document.forms[0];
+function rs(){
+g.reset();
+};
+document.querySelector(".send");
+var inputForm = document.querySelector(".phone");
 
+	inputForm.onkeypress  = function(event){
+		if (event.keyCode <48 || event.keyCode >57){
+		
+			alert("Вводите цифры, пожалуйста");
+			return false;
+		}
+	}
+
+/*var inputFormMail = document.querySelector(".mail");
+
+	inputFormMail.onkeypress  = function(event){
+		for (var i = 0; i<inputFormMail.value.length; i++)
+		if (inputFormMail.value.keyCode != 64){
+		console.log(event.keyCode)
+			alert("Что-то здесь не так, проверьте адрес, пожалуйста");
+			return false;
+		}
+	}*/
+
+	var logo = document.querySelector(".logo");
+	logo.onclick = function (){
+		logo.style.position = "fixed";
+		document.onmousemove = function(){
+			logo.style.left = event.clientX + 15 + "px";
+logo.style.top = event.clientY + 25+"px";
+
+
+		}
+	}
